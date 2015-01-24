@@ -17,6 +17,8 @@
 		5A2DF5441A601006007EBFA9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DF5431A601006007EBFA9 /* Deck.m */; };
 		5A2DF5471A6012A5007EBFA9 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DF5461A6012A5007EBFA9 /* PlayingCardDeck.m */; };
 		5A84AFB61A72C28100AECC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A84AFB51A72C28100AECC48 /* Main.storyboard */; };
+		5AA6F2791A736F0A0003702F /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AA6F2781A736F0A0003702F /* click.wav */; };
+		5AA6F27B1A7371690003702F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA6F27A1A7371690003702F /* AudioToolbox.framework */; };
 		5AB7D62D1A6FE9F5003F255B /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7D62C1A6FE9F5003F255B /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		5A2DF5451A6012A5007EBFA9 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		5A2DF5461A6012A5007EBFA9 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		5A84AFB51A72C28100AECC48 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5AA6F2781A736F0A0003702F /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		5AA6F27A1A7371690003702F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5AB7D62B1A6FE9F5003F255B /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		5AB7D62C1A6FE9F5003F255B /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA6F27B1A7371690003702F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 		5A2DF5011A60023E007EBFA9 = {
 			isa = PBXGroup;
 			children = (
+				5AA6F27A1A7371690003702F /* AudioToolbox.framework */,
 				5A2DF50C1A60023E007EBFA9 /* Matchismo */,
 				5A2DF5261A60023E007EBFA9 /* MatchismoTests */,
 				5A2DF50B1A60023E007EBFA9 /* Products */,
@@ -92,12 +98,12 @@
 		5A2DF50C1A60023E007EBFA9 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				5A84AFB51A72C28100AECC48 /* Main.storyboard */,
 				5A2DF5141A60023E007EBFA9 /* ViewController.h */,
 				5A2DF5151A60023E007EBFA9 /* ViewController.m */,
 				5A2DF51A1A60023E007EBFA9 /* Images.xcassets */,
 				5A2DF53B1A600A75007EBFA9 /* Model */,
 				5A2DF50D1A60023E007EBFA9 /* Supporting Files */,
-				5A84AFB51A72C28100AECC48 /* Main.storyboard */,
 			);
 			path = Matchismo;
 			sourceTree = "<group>";
@@ -105,6 +111,7 @@
 		5A2DF50D1A60023E007EBFA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5AA6F2781A736F0A0003702F /* click.wav */,
 				5A2DF5111A60023E007EBFA9 /* AppDelegate.h */,
 				5A2DF5121A60023E007EBFA9 /* AppDelegate.m */,
 				5A2DF50F1A60023E007EBFA9 /* main.m */,
@@ -225,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA6F2791A736F0A0003702F /* click.wav in Resources */,
 				5A2DF51B1A60023E007EBFA9 /* Images.xcassets in Resources */,
 				5A84AFB61A72C28100AECC48 /* Main.storyboard in Resources */,
 			);
@@ -358,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Matchismo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Matchismo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
